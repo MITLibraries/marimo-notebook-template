@@ -2,16 +2,16 @@
 
 **_NOTE: Rework this section to describe your Marimo notebook(s)._**
 
-This repository is a template for a single, or multiple, Marimo notebooks that will often (though not necessarily) be served and accessed via [marimo-launcher](https://github.com/MITLibraries/marimo-launcher).
+This repository is a template for a single, or multiple, Marimo notebooks that will be served and accessed via [marimo-launcher](https://github.com/MITLibraries/marimo-launcher).
 
-By default, [marimo-launcher](https://github.com/MITLibraries/marimo-launcher) expects a single file called `notebook.py` in the root of the repository it clones and launches.  But `marimo-launcher` supports a `--path` CLI arg or `NOTEBOOK_PATH` env var that allows overriding this default behavior, allowing a Marimo notebook repository either have multiple notebooks or a unique structure.  This template exemplifies a default structure of a [notebook.py](notebook.py) file at the root of the repository.
+By default, [marimo-launcher](https://github.com/MITLibraries/marimo-launcher) expects a single file called `notebook.py` at the root of the repository it clones and launches.  However, `marimo-launcher` also supports a `--path` CLI arg or `NOTEBOOK_PATH` env var that allows overriding this default behavior, allowing a Marimo notebook repository like this to have multiple notebooks and/or a unique structure.  This template exemplifies a default structure of a single [notebook.py](notebook.py) file at the root of the repository.
 
 ## Developing 
 
 The recommended approach for developing a Marimo notebook is to use the Marimo GUI editor:
 
 ```shell
-uv run marimo edit --sandbox --headless --no-token notebook.py
+make edit-notebook
 ```
 
 ### Dependencies
